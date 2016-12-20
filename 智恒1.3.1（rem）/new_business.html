@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	    <meta name="format-detection" content="telephone=no">
+	    <title>新业务办理</title>
+	    <link rel="stylesheet" type="text/css" href="css/base.css">
+	    <link rel="stylesheet" type="text/css" href="css/phone.css">
+	    <link rel="stylesheet" type="text/css" href="css/ipad.css">
+	    <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/base.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="public-header">
+				<!--
+                    	描述：顶部图片，宽度100%；高度自行撑开
+                    -->
+            	<img src="images/new.jpg" alt="活动">
+        	</div>
+        	<div class="content bd-n">
+        		<div class="bd-new">
+        			<!--
+                    	描述：用户手机号
+                    -->
+        			<input name="page" type="text"  maxlength="11" class="bd-ipt" placeholder="请输入您的手机号" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+        			<!--
+                    	描述：查询用户是否可以办理按钮
+                    -->
+        			<div class="bd-n-base">
+        				<a href="#"></a>
+        				<button class="bd-n-code">查询</button>
+        			</div>
+        		</div>
+        		<!--
+                    	描述：检验后显示的区域
+                    -->
+        		<div class="bd-n-detail">
+        			<!--
+                    	描述：用户不符合条件显示的内容
+                    -->
+        			<div class="bd-n-no">
+        				抱歉哦，您不符合办理条件呢。
+        			</div>
+        			<!--
+                    	描述：用户符合条件显示的内容
+                    -->
+        			<div class="bd-n-yes">
+        				<div class="bd-n-goods">
+        					<ul>
+        						<!--
+			                    	描述：用户可办理的业务选项
+			                    -->
+        						<li>
+        							<button class="bd-n-btn bd-n-btn1">
+        							 【5元/（月）-200分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn2">
+        							  【10元/（月）-300分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn3">
+        							 【15元/（月）-600分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn4">
+        							  【20元/（月）-600分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn5">
+        							 【25元/（月）-750分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn6">
+        							  【35元/（月）-1000分钟】-12个月合约期
+        							</button>
+        						</li>
+        						<li>
+        							<button class="bd-n-btn bd-n-btn7">
+        							  【50元/（月）-1500分钟】-12个月合约期
+        							</button>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="bd-n-password">
+        			<!--
+                    	描述：用户密码
+                    -->
+        			<input name="page" type="text"  maxlength="6" class="bd-ipt" placeholder="请输入密码" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+        			<!--
+                    	描述：用户提交订单
+                    -->
+        			<div class="bd-n-base">
+        				<a href="#"></a><button class="bd-n-submit">确认提交</button>
+        			</div>
+        		</div>
+        	</div>
+		</div>
+	</body>
+</html>

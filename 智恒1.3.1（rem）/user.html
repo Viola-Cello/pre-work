@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>个人中心</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/phone.css">
+    <link rel="stylesheet" type="text/css" href="css/ipad.css">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            jQuery(".bd-g-left").slide({
+                titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:2
+                ,delayTime:500
+            });
+      })
+    </script>
+</head>
+<body>
+	<div class="wrap">
+        <div class="hd-user">
+        	<div class="hd-m-top">
+        		<!--描述：头部返回键
+                -->
+        		<a href="#"><div class="hd-u-back left"></div></a>
+        		个人中心
+        		<!--描述：头部设置键
+                -->
+        		<a href="#"><div class="hd-u-home right"></div></a>
+        	</div>
+            <div class="hd-m-message">
+            	<div class="hd-u-message">
+            		<!--描述：用户头像
+                	-->
+                    <img src="images/bg.png" class="hd-u-photo"/>
+                    <!--描述：用户昵称
+                	-->
+                    <div class="hd-u-name">璀璨的diamond</div>
+                	<!--描述：用户会员等级
+                		-->
+                    <div class="hd-u-member">
+                    	会员等级
+                    	<!--描述：当前图片可更换，现在是游客，会员可换为u_VIP.png
+                		-->
+                    	<img src="images/u_no.png" class="m-vip"/ >
+                    </div>
+                    
+                </div>
+	            <div class="hd-m-user">
+	            	<ul>
+	            		<li>
+			            	<a href="#">
+			            		<!--描述：用户本站内的帐户积分
+		                		-->
+			            		<div class="hd-m-integral">
+			            		账户积分
+			            		<span>11111.11</span>
+			            		
+			            		</div>
+			            	</a>
+	            		</li>
+	            		<li>
+			            	<a href="#">
+			            		<!--描述：用户本站内的帐户余额
+		                		-->
+			            		<div class="hd-m-balance">
+			            		账户余额
+			            		<span>11111.11</span>
+			            		
+			            		</div>
+			            	</a>
+	            			
+	            		</li>
+	            	</ul>
+	            </div>
+            </div>
+        </div>
+        <div class="bd-user">
+        	<!--描述：用户订单
+                -->
+        	<div class="bd-order">
+        		<div class="bd-o-name">
+	        		<ul>
+		        		<li>
+		        			<div class="bd-u-order">我的订单</div>
+		        		</li>
+		        		<li>
+		        			<a href="#">
+		        				<div class="bd-u-all">查看全部订单</div>
+		        			</a>
+		        		</li>
+		        	</ul>
+	        	</div>
+	            <div class="bd-u-list">
+	                <ul>
+	                    <li>
+	                    	<!--描述：未发货的
+                			-->
+	                        <a href="#">
+	                            <div class="bd-o-waite">
+	                                	待发货
+	                                	<!--描述：发货个数
+                						-->
+	                                	<div class="bd-u-number">11</div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                    	<!--描述：已发货的
+                			-->
+	                        <a href="#">
+	                            <div class="bd-o-sent">
+	                                	已发货
+	                                	<div class="bd-u-number">1</div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                    	<!--描述：发货失败
+                		-->
+	                        <a href="#">
+	                            <div class="bd-o-faill">
+                            		发货失败
+                            		<div class="bd-u-number">1</div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	        <!--描述：用户帐户内钱包
+                -->
+	        <div class="bd-wallet">
+	        	<ul>
+	        		<li>
+	        			<div class="bd-u-wallet">我的钱包<span>暂不开放</span></div>
+	        		</li>
+	        		<li>
+	        			<a href="#">
+	        				<div class="bd-u-record">消费记录</div>
+	        			</a>
+	        		</li>
+	        	</ul>
+	        </div>
+	        <!--描述：用户升级会员
+                -->
+	        <div class="bd-member">
+	        	<ul>
+	        		<li><div class="bd-u-member">升级会员<span>暂不开放</span></div></li>
+	        		<li><a href="#"><div class="bd-u-up"></div></a></li>
+	        	</ul>
+	        </div>
+	        
+	        <!--描述：优惠活动以及推荐活动，平时隐藏，有活动再显示
+                -->
+            <div class="bd-goods-sale">
+            	<ul>
+	        		<li><div class="bd-u-sale">优惠活动</div></li>
+	        		<li><a href="#"><div class="bd-u-up"></div></a></li>
+	        	</ul>
+            </div>
+            <div class="bd-goods-sale">
+            	<ul>
+	        		<li><div class="bd-u-save">推 荐</div></li>
+	        		<li><a href="#"><div class="bd-u-up"></div></a></li>
+	        	</ul>
+            </div>
+            
+	        <!--描述：推荐活动的内容，图片以左滑动的形式循环播放
+                -->
+            <div class="bd-g-left">
+            	 <div  class="slideBox">
+                    <div class="hd">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="bd-s-photo">
+                        	<div class="bd-photo">
+                        		<ul>
+	                                <li  style="">
+	                                    <a href="#" target="_blank">
+	                                        <img src="images/4.jpg">
+	                                    </a>
+	                                </li>
+	                                <li style="">
+	                                    <a href="#" target="_blank">
+	                                        <img src="images/1.jpg">
+	                                    </a>
+	                                </li>
+	                                <li style="float: left; width: 50%;">
+	                                    <a href="#" target="_blank">
+	                                        <img src="images/2.jpg">
+	                                    </a>
+	                                </li>
+	                                <li style="float: left; width: 50%;">
+	                                    <a href="#" target="_blank">
+	                                        <img src="images/3.jpg">
+	                                    </a>
+	                                </li>
+                             	</ul>
+                           </div>
+                    </div>
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

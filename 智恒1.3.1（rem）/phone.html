@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>手机页面</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/phone.css">
+    <link rel="stylesheet" type="text/css" href="css/ipad.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/myrem.js"></script>
+    <script src="js/base.js"></script>
+</head>
+<body>
+	<div class="wrap ">
+		<div class="content">
+			<div class="hd-phone">
+				<div class="hd-p-content">
+					<!--页面主图-->
+					<img src="images/phone.jpg">
+					<div class="hd-p-message">
+						<!--产品名称-->
+						<div class="hd-p-name">
+						<span>官方直供</span>
+						新型号拍照美图手机新型号
+						</div>
+						<div class="hd-p-name">
+						拍照美图手机新型号拍照美图手机新型号拍照美图手机
+						</div>
+						<!--产品价格-->
+						<div class="hd-p-public">价格</div>
+						<div class="hd-p-price">
+							￥2000.00
+						</div>
+						<!--产品红包-->
+						<div class="hd-p-public">红包</div>
+						<div class="hd-p-red">
+							<img src="images/ico_red.png">
+						     高至<span>50.00</span>元
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bd-phone">
+				<!--产品类型-->
+				<div class="bd-p-type">
+					<div class="bd-color">
+						<div class="hd-p-public">颜色</div>
+						<div class="bd-p-color">
+							<button class="bd-p-btn bd-c-btn" >金色加银色</button>
+							<button class="bd-p-btn bd-c-btn" >白色</button>
+							<button class="bd-p-btn bd-c-btn" >金色</button>
+							<button class="bd-p-btn bd-c-btn" >白色</button>
+							<button class="bd-p-btn bd-c-btn" >金色</button>
+						</div>
+					</div>
+					<div class="hd-p-public">版本</div>
+					<div class="bd-p-edition">
+						<button class="bd-p-btn bd-c-btn" >移动</button>
+						<button class="bd-p-btn bd-c-btn" >联通</button>
+						<button class="bd-p-btn bd-c-btn" >电信</button>
+						<button class="bd-p-btn bd-c-btn" >全网通</button>
+					</div>
+					<div class="hd-p-public">内存</div>
+					<div class="bd-p-memory">
+						<button class="bd-p-btn bd-c-btn" >32G</button>
+						<button class="bd-p-btn bd-c-btn" >16G</button>
+						<button class="bd-p-btn bd-c-btn" >64G</button>
+					</div>
+				    <!--产品数量-->
+					<div class="hd-p-public">数量</div>
+					<div class="bd-p-number">
+						<!--减少个数-->
+						<input type="button" name="" class="inpt-minus ipt-p-minus">
+						<!--显示个数的输入框-->
+	                    <input type="number" id="inp" class="ipt-main ipt-p-main" value="1" onfocus="if(value=='1'){value=''}"  onblur="if(value==''){value='1'}"/ onkeyup="limitInput(this);">
+	                    <!--增加个数-->
+	                    <input type="button" name="" class="inpt-plus ipt-p-plus">
+					</div>
+				</div>
+				<div class="bd-p-more">
+					上拉查看更多商品详情......
+				</div>
+				<div class="bd-p-moreback">
+					下拉返回商品购物信息......
+				</div>
+				<!--产品说明-->
+				<div class="bd-p-message">
+				产品说明：
+					<video id="video1" style="width: 100%;height:auto;padding: 0.1rem; border:2px solid #efefef;" controls="controls">
+					    <source src="mp4/06.mp4" type="video/mp4" />
+					    <source src="" type="video/ogg" />
+					</video>
+				</div>
+			</div>
+			<!--支付按钮-->
+			<div class="footer">
+	            <a href="#">
+	                <button class="base-btn">
+	                    <span>立即支付：<label>2.85</label>元</span>
+	                </button>
+	            </a>
+	        </div>
+		</div>
+	</div>
+</body>
+</html>
