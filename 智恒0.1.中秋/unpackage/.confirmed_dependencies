@@ -1,0 +1,192 @@
+{
+  "card.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/ico_minus.png",
+      "images/ico_plus.png",
+      "images/header.png",
+      "css/ipad.css"
+    ],
+    "refer": []
+  },
+  "new business.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "images/name-2.png",
+      "js/jquery-1.9.1.min.js",
+      "images/checkbox.png",
+      "images/header.png",
+      "css/ipad.css"
+    ],
+    "refer": []
+  },
+  "user.html": {
+    "resources": [
+      "css/base.css",
+      "images/name-1.png",
+      "css/phone.css",
+      "images/bg.png",
+      "js/jquery.SuperSlide.2.1.1.js",
+      "images/name-2.png",
+      "images/checkbox.png",
+      "images/arrow.png",
+      "images/dot_1@2x.png",
+      "images/slider-arrow.png",
+      "images/avatar_bg.png",
+      "js/jquery-1.9.1.min.js",
+      "css/ipad.css",
+      "images/name-3.png",
+      "images/u_hd.png",
+      "images/hd_home.png",
+      "images/hd_back.png",
+      "images/VIP.jpg",
+      "images/hd_bttom.png",
+      "images/hd_bl.png",
+      "images/order.png",
+      "images/card.png",
+      "images/wallet.png",
+      "images/right.png",
+      "images/waite.png",
+      "images/sent.png",
+      "images/fail.png",
+      "images/save.png",
+      "images/sale.png",
+      "images/VIP.png",
+      "images/u_no.png",
+      "images/u_normal.png",
+      "images/u_h.png",
+      "images/3.jpg",
+      "images/4.jpg",
+      "images/2.jpg",
+      "js/jquery1.42.min.js",
+      "js/jquery.SuperSlide.2.1.1.source.js",
+      "images/1.jpg",
+      "images/hd_integral.png"
+    ],
+    "refer": []
+  },
+  "my order.html": {
+    "resources": [
+      "js/clipboard.min.js",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "css/ipad.css"
+    ],
+    "refer": []
+  },
+  "goods_business.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "images/name-2.png",
+      "js/jquery-1.9.1.min.js",
+      "images/checkbox.png",
+      "images/header.png",
+      "css/ipad.css",
+      "js/mobiscroll.custom-2.17.0.min.js",
+      "images/ipt_s.png",
+      "images/ico_red.png"
+    ],
+    "refer": []
+  },
+  "goods_card.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/ico_minus.png",
+      "images/ico_plus.png",
+      "images/header.png",
+      "css/ipad.css",
+      "images/1G-1.png",
+      "images/ico_red.png",
+      "images/ico_red.gif",
+      "images/red.gif",
+      "images/ico_2.gif",
+      "images/card_1.png"
+    ],
+    "refer": []
+  },
+  "goods_order.html": {
+    "resources": [
+      "js/clipboard.min.js",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "css/ipad.css",
+      "images/o_name.png",
+      "images/o_time.png",
+      "images/o_money.png"
+    ],
+    "refer": []
+  },
+  "new_business.html": {
+    "resources": [
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/header.png",
+      "css/ipad.css",
+      "zR1.1.6/images/new.jpg",
+      "zR1.1.6/images/new.jpg",
+      "images/new.jpg",
+      "images/2.1.png",
+      "images/new.png"
+    ],
+    "refer": []
+  },
+  "popup.html": {
+    "resources": [
+      "images/close.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "css/ipad.css"
+    ],
+    "refer": []
+  },
+  "business.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/checkbox.png",
+      "images/header.png",
+      "css/ipad.css",
+      "images/name-3.png",
+      "images/hd-business.png",
+      "images/month.png",
+      "images/ipt_s.png",
+      "images/ico_red.png",
+      "images/push.png",
+      "images/cat.png",
+      "images/activity.png",
+      "images/card_2.png",
+      "images/lover.png"
+    ],
+    "refer": []
+  },
+  "activity.html": {
+    "resources": [
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/1.jpg",
+      "css/ipad.css",
+      "images/a_hd.png",
+      "images/a_price.png",
+      "images/a_lover.png",
+      "images/a_btm.png"
+    ],
+    "refer": []
+  }
+}
