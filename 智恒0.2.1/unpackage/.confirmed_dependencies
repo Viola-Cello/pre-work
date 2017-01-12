@@ -1,0 +1,51 @@
+{
+  "goods_card.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/ico_minus.png",
+      "images/ico_plus.png",
+      "images/header.png",
+      "css/ipad.css",
+      "images/1G-1.png"
+    ],
+    "refer": []
+  },
+  "goods_business.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "images/name-2.png",
+      "js/jquery-1.9.1.min.js",
+      "images/checkbox.png",
+      "images/header.png",
+      "css/ipad.css"
+    ],
+    "refer": []
+  },
+  "business.html": {
+    "resources": [
+      "images/name-1.png",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "images/checkbox.png",
+      "images/header.png",
+      "css/ipad.css",
+      "images/name-3.png"
+    ],
+    "refer": []
+  },
+  "goods_order.html": {
+    "resources": [
+      "js/clipboard.min.js",
+      "css/base.css",
+      "css/phone.css",
+      "js/jquery-1.9.1.min.js",
+      "css/ipad.css"
+    ]
+  }
+}

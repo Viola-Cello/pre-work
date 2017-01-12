@@ -160,10 +160,9 @@ input[type="number"]{-moz-appearance:textfield;}
 .goods-box .border-1 td{
     table-layout:fixed
 }
- 
 .goods-u-number {
     font-size: 0.24rem;
-    width: 1rem;
+    width: 0.9rem;
 }
 .goods-numberbox{
     position: relative;

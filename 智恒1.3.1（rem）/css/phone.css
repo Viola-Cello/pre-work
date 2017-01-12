@@ -21,14 +21,13 @@
     line-height: 0.44rem;
     height: 1.12rem;
 } 
-.goods-table button.selected{
+.goods-name.selected{
    border:0.04rem solid #277ED2;
 }
 .goods-name .goods-c-price{
     font-size: 0.24rem;
     line-height: 0.4rem;
 }
-
 .goods-description{
 	min-height: 0.6rem;
     font-size: 0.24rem;
@@ -60,20 +59,25 @@
     line-height: 0.52rem;
     text-indent: 0.1rem;
 }
-.goods-box li div .goods-numberbox{
+.goods-numberbox{
+    position: relative;
 }
 .goods-box li div .ipt-main{
+    position: relative;
     font-size: 0.26rem;
     line-height: 0.36rem;
+    height: 0.5rem;
+    padding: 0 0.6rem 0 0.2rem;
 }
 .goods-box li div .inpt-minus{
-	width: 0.6rem;
-    height: 0.44rem;
+	width: 0.34rem;
+    height: 0.48rem;
     background-size: 0.34rem 0.34rem;
 }
 .goods-box li div .inpt-plus{
-	width: 0.6rem;
+	width: 0.34rem;
     height: 0.44rem;
+    right: 0.2rem;
     background-size: 0.34rem 0.34rem;
 }
 .footer{
