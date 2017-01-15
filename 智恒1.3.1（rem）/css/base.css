@@ -120,8 +120,8 @@ input[type="number"]{-moz-appearance:textfield;}
     -webkit-transform: rotateZ(0deg);
     }    
 }
-
 .goods-table img {
+    animation: btnRotate 1.5s linear infinite;
     -webkit-animation: btnRotate 1.5s linear infinite;
 }
 .goods-name  .goods-c-price{
@@ -338,12 +338,6 @@ input[type="number"]{-moz-appearance:textfield;}
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-	
-}
-
-
-.sub-list>ul>li{
-	
 }
 .my-order{
     width: 100%;
@@ -511,7 +505,6 @@ span+img{
 .goods-d-box{
     width: 100%;
     overflow: hidden;
-    
 }
 .goods-price .goods-p-n{
     height: 100%;
@@ -943,29 +936,32 @@ slideBox .next{
 }
 .bd-ipt{
 	width: 60%;
-	height: 50px;
-	margin:20px 0 0 10px;
-	border: 2px solid #D99901;
-	font-size: 18px;
-	line-height:46px ;
-	text-indent: 5px;
-	color: #232323;
+    height: 0.8rem;
+    margin: 0.4rem 0 0 0.2rem;
+    border: 2px solid #FDE09C;
+    font-size: 0.32rem;
+    line-height: 0.8rem;
+    text-indent: 0.1rem;
+    color: #232323;
+}
+.bd-ipt.active{
+    border: 2px solid #D99901;
 }
 .bd-n-base{
-	width:30%;
-	height:50px;
+	width: 30%;
+    height: 0.8rem;
     margin: 0 0 0 10px;
-	display: inline-block;
+    display: inline-block;
 }
 .bd-n-code{
 	width: 100%;
     border: 2px solid #FFA54D;
-    border-radius: 8px;
+    border-radius: 0.14rem;
     background-color: #FFDBA3;
-    font-size: 18px;
+    font-size: 0.32rem;
     color: #4C2C2C;
     text-align: center;
-    line-height: 46px;
+    line-height: 0.8rem;
 }
 .bd-n-code a{
 	width:100%;
@@ -986,10 +982,10 @@ slideBox .next{
 }
 .bd-n-yes{
 	width: 100%;
-	height: auto;
-	padding: 30px 0;
-	font-size: 17px;
-	line-height: 25px;
+    height: auto;
+    padding: 0.3rem 0;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
 }
 .bd-n-yes ul{
 	width:100%;
@@ -1000,15 +996,15 @@ slideBox .next{
 	height: auto;
 }
 .bd-n-btn{
-    margin: 10px 5%;
+    margin: 0.12rem 5%;
     width: 90%;
-	height: 45px;
-	border:2px double #B5B5B5 ;
-	border-radius: 6px;
-	text-align: center;
-	font-size: 15px;
-	line-height: 41px;
-	background-color:#FFFFFB;
+    height: 0.7rem;
+    border: 2px double #B5B5B5;
+    border-radius: 0.1rem;
+    text-align: center;
+    font-size: 0.25rem;
+    line-height: 0.7rem;
+    background-color: #FFFFFB;
 }
 .bd-n-btn.active{
 	background-color: #FFF2D1;
@@ -1017,17 +1013,17 @@ slideBox .next{
 .bd-n-submit{
 	width: 100%;
     border: 2px solid #FFA54D;
-    border-radius: 8px;
+    border-radius: 0.16rem;
     background:-ms-linear-gradient(bottom, #c18e05,  #EFC34C);  /* IE 10 */
     background:-moz-linear-gradient(linear,100% 0% 0%, 0% ,from(#c18e05), to(#EFC34C));/*火狐*/ 
     background:-webkit-gradient(bottom, #c18e05,  #EFC34C);/*谷歌*/ 
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#EFC34C));      /* Safari 4-5, Chrome 1-9*/
     background: -webkit-linear-gradient(bottom, #FBA54B, #FBDE8E);   /*Safari5.1 Chrome 10+*/
     background: -o-linear-gradient(bottom, #c18e05,  #EFC34C);  /*Opera 11.10+*/
-    font-size: 18px;
+    font-size: 0.34rem;
     color: #fff;
     text-align: center;
-    line-height: 46px;
+    line-height: 0.7rem;
 }
 .bd-n-submit a{
 	width:100%;

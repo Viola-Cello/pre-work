@@ -12,28 +12,26 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-
-             $(document).ready(function(){
-                  //加的效果
-                  $(".inpt-plus").click(function(){
-                  var n=$(this).prev().val();
-                  var num=parseInt(n)+1;
-                  if(num==0){ return;}
-                  $(this).prev().val(num);
-                  });
-                  //减的效果
-                  $(".inpt-minus").click(function(){
-                  var n=$(this).next().val();
-                  var num=parseInt(n)-1;
-                  if(num==0){ return}
-                  $(this).next().val(num);
-                  });
-              })
-             $('.goods-name').click(function(){
-                  $(this).toggleClass('active');
-              });
-          })
-
+            $(document).ready(function(){
+                //加的效果
+                $(".inpt-plus").click(function(){
+                    var n=$(this).prev().val();
+                    var num=parseInt(n)+1;
+                    if(num==0){ return;}
+                    $(this).prev().val(num);
+                });
+                //减的效果
+                $(".inpt-minus").click(function(){
+                    var n=$(this).next().val();
+                    var num=parseInt(n)-1;
+                    if(num==0){ return}
+                    $(this).next().val(num);
+                });
+             });
+            $('.goods-name').click(function(){
+                $(this).toggleClass('active');
+            });
+        })
     </script>  
 </head>
 <body>
@@ -105,7 +103,7 @@
                         <div class="right border-1">个数：
                           <div class="goods-numberbox">
                               <input type="button" name="" class="inpt-minus">
-                              <input type="number" id="inp" class="ipt-main" value="1" onfocus="if(value=='1'){value=''}"  onblur="if(value==''){value='1'}"/ onkeyup="limitInput(this);">
+                              <input type="number" id="inp" class="ipt-main" value="1" onfocus="if(value=='1'){value=''}"  onblur="if(value==''){value='1'}" onkeyup="limitInput(this);"/>
                               <input type="button" name="" class="inpt-plus">
                                   <script type="text/javascript">
                                       function limitInput(o){

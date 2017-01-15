@@ -1,52 +1,62 @@
 $(document).ready(function(){
 	//new_business页面内
     $('.bd-n-btn').click(function(){
-           //给id为btn的元素添加点击事件
-          $(this).toggleClass('active');//每次点击的时候，将当前的元素切换active样式
-                                        //如果有，则去掉，否则添加
+        if($(this).hasClass('active')){
+            $(".bd-n-btn").removeClass('active');
+            $(this).removeClass("active");
+        }else{
+            $(".bd-n-btn").removeClass('active');
+            $(this).addClass("active");
+        };
+    });
+    $('.bd-ipt').focus(function(){
+        $(this).addClass("active");
+    }).blur(function(){
+        $(this).removeClass("active");
     });
     //goods_order页面内
     $(".order-detail").click(function (){
         $(this).next(".order-t").toggle();
         $(this).toggleClass('active');
-        });
-   //new Clipboard('.btn-copy');
-
+    });
+    // new Clipboard('.btn-copy');
     //goods_card页面
     $(".goods-name").click(function(){
         if($(this).hasClass('selected')){
             $(".goods-name").removeClass('selected').children('img').animate({
-                right:'-0.14rem',
-                top:'-0.14rem'},"fast");
+                right:'-0.14rem',top:'-0.14rem'},"fast");
             $(this).removeClass("selected");
         }else{
             $(".goods-name").removeClass('selected').children('img').animate({
-                right:'-0.14rem',
-                top:'-0.14rem'},"fast");
+                right:'-0.14rem',top:'-0.14rem'},"fast");
             $(this).addClass("selected").children('img').animate({
-                 top: '0.06rem',
-                right: '0.1rem',
-                width: '0.34rem',
-                height: '0.47rem'},"fast");
+                top: '0.06rem',right: '0.1rem',width: '0.34rem',height: '0.47rem'},"fast");
         };
     });
-	//加的效果
-	$(".inpt-plus").click(function(){
-	    var n=$(this).prev().val();
-	    var num=parseInt(n)+1;
-	    if(num==0){ return;}
-	    $(this).prev().val(num);
-	});
-	//减的效果
-	$(".inpt-minus").click(function(){
-	    var n=$(this).next().val();
-	    var num=parseInt(n)-1;
-	    if(num==0){ return}
-	    $(this).next().val(num);
-	}); 
-
-
 	//goods_business页面     business页面
+    function valPhone(){
+        var phone = $('.base-ipt').val();
+        var flag = false;
+        var message = "";
+        var myReg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+        if ( phone == '') {
+            message = "手机号码不能为空！";
+        }else if ( phone.length != 11 ) {
+            message = "请输入有效手机号码！";
+        }else if ( !myReg.test(phone)) {
+            message = "请输入有效手机号码！";
+        }else{
+            flag = true;
+        };
+        $(function(){
+            $(".base-input").keyup(function(){
+                this.value = this.value.repalce(/[^\d]/g,'');
+            })
+        });
+    }
+    $(".base-input").blur(function(){
+        valPhone();
+    });
     $(".ipt-both").click(function(){
         if($(this).hasClass('active')){
             $(".ipt-both").removeClass('active').find('div+img').animate({
@@ -63,76 +73,65 @@ $(document).ready(function(){
             },"fast");
         };
     });
-
-    $(".base-input").blur(function(){
-        var oPhone= $('.base-input').val();
-        var re=/^(13[0-9]{9})||(15[89][0-9]{8})$/;
-        if(!re.test(oPhone)){
-            alert('请输入正确的手机号码。');
-            return false;  
-        };
-    });
-
     //activity页面    
     $('.bd-active-btn').click(function(){
  		$(this).addClass("active");
  	});
-     //phone页面内        
-	//按钮变色的效果
-	$(".bd-p-color button").click(function(){
-        $("button").removeClass('active');
-		$(this).addClass('active');
+    //phone页面内按钮变色的效果
+    function btnClick(){
+       if($(this).hasClass('active')){
+            $(this).removeClass("active").siblings().removeClass('active');
+        }else{
+            $(this).addClass("active").siblings().removeClass('active');
+        };
+    };
+	$(".bd-p-color button,.bd-p-edition button,.bd-p-memory button").click(function(){
+        btnClick.apply(this);
    });
-	$(".bd-p-edition button").click(function(){
-        $(" button").removeClass('active');
-		$(this).addClass('active');
-   });
-	$(".bd-p-memory button").click(function(){
-        $(" button").removeClass('active');
-		$(this).addClass('active');
-   });
+    //加的效果
+    $(".inpt-plus").click(function(){
+        var n=$(this).prev().val();
+        var num=parseInt(n)+1;
+        if(num>500){
+           num = 500;
+           alert('超过最大限额');
+        };
+        $(this).prev().val(num);
+    });
+    //减的效果
+    $(".inpt-minus").click(function(){
+        var ipt = $("#ipt").val();
+        var n=$(this).next().val();
+        var num=parseInt(n)-1;
+        if(num<1){ 
+            num = 1;
+            alert('超过最小限额');
+        }
+        $(this).next().val(num);
+    }); 
    //聚焦效果
    	$(".ipt-p-main").focus(function(){
-   		$(this).css({
-   			backgroundColor:'#fefefe',
-   			border:'1px solid #aaa',
-   			color:'#333'
-   		});
-        if(value=='1'){
-            value=''
-        };
+   		$(this).addClass("active");
    	}).blur(function(){
-   		$(this).css({
-   			backgroundColor:'#fff',
-   			border:'1px solid #ddd'
-   		});
-        if(value==''){
-            value='1'
+   		$(this).removeClass("active");
+   	});
+    //限制的效果,最大限额500
+    /*function limitInput(o){
+        var value=o.value;
+        var min=1;
+        var max=500;
+        if(parseInt(value)<min||parseInt(value)>max){
+          alert('超过最大限额');
         };
-   	})
-   //限制的效果,最大限额500
-    function limitInput(o){
-          var value=o.value;
-          var min=1;
-          var max=500;
-          if(parseInt(value)<min||parseInt(value)>max){
-              alert('超过最大限额');
-              (document.getElementById('#popup').innerHTML).style.display=' ';
-          }
-    }
-}
-);
-
-/*window.onload =function(){
-    var text = document.getElementById("inp");
+    };
+    var text = document.getElementById("ipt");
     text.onkeyup = function(){
         this.value=this.value.replace(/\D/g,'');
         if(text.value>500){
            text.value = 500;
         }
-    };
-}*/
-
+    };*/
+});
 
     /*
     下拉加载更多
@@ -155,9 +154,7 @@ $(document).ready(function(){
 
     	}
     }*/
-
-/*
-
+    /*
     var divTwo = $('.divTwo');
     //1.禁用div的滚轮事件
     $('.divTwo').mousewheel(function (e) {

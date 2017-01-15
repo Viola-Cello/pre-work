@@ -82,29 +82,9 @@
                                 <td>
                                     <div class="goods-numberbox">
                                       <input type="button" name="" class="inpt-minus">
-                                      <input type="number" id="inp" class="ipt-main" value="1" onfocus="if(value=='1'){value=''}"  onblur="if(value==''){value='1'}"/ onkeyup="limitInput(this);">
+                                      <input type="number" id="ipt" class="ipt-main" value="1" onfocus="if(value=='1'){value=''}"  onblur="if(value==''){value='1'}" onkeyup="limitInput(this);"/>
                                       <input type="button" name="" class="inpt-plus">
-                                          <script type="text/javascript">
-                                              function limitInput(o){
-                                                  var value=o.value;
-                                                  var min=1;
-                                                  var max=500;
-                                                  if(parseInt(value)<min||parseInt(value)>max){
-                                                      alert('超过最大限额');(document.getElementById('#popup').innerHTML).style.display=' ';
-                                                  }
-                                              }
-
-                                              var text = document.getElementById("inp");
-                                                text.onkeyup = function(){
-                                                    
-                                                this.value=this.value.replace(/\D/g,'');
-                                                if(text.value>500){
-                                                   text.value = 500;
-                                                }
-                                              }
-
-                                           </script>
-                                        </div> 
+                                    </div> 
                                 </td>
                               </tr>      
                             </tbody>
